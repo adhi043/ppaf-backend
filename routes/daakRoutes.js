@@ -7,7 +7,7 @@ router.post('/create',upload.single('file'),daakController.addDaak)
 
 
 router.get('/get/:id',daakController.getDaakById)
-router.put('/update/:id',daakController.updateDaak)
+router.put('/update/:id',upload.single('file'),daakController.updateDaak)
 router.delete('/delete/:id',daakController.deleteDaak)
 
 

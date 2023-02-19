@@ -1,9 +1,17 @@
 module.exports={
+    // HOST:'localhost',
+    // PORT:'8000',
+    // USER:'admscciorg',
+    // PASSWORD:'Lighthouseteam098',
+    // DB:'admsccio_daak_db',
+    // dialect:'mysql',
+    // KEY_NAME:'janwarMA5',
+
     HOST:'localhost',
     PORT:'8000',
-    USER:'admscciorg',
-    PASSWORD:'Lighthouseteam098',
-    DB:'admsccio_daak_db',
+    USER:'root',
+    PASSWORD:'',
+    DB:'daak',
     dialect:'mysql',
     KEY_NAME:'janwarMA5',
 

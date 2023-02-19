@@ -90,8 +90,10 @@ const updateDaak = async (req, res) => {
     try {
         let id = req.params.id
 
-        const daak = await Daak.update({
-            where: { id: id }
+        const file='https://daak.sargodhacci-org.com/'+req.file.filename
+
+        const daak = await Daak.update({ ...req.body,file },{
+            where: { uid: id }
         })
         res.status(200).json({
             status: 'ok',
@@ -115,7 +117,7 @@ const deleteDaak = async (req, res) => {
     try {
         let id = req.params.id
 
-        const daak = await Daak.delete({
+        const daak = await Daak.destroy({
             where: { id: id }
         })
         res.status(200).json({
