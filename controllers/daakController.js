@@ -17,7 +17,7 @@ const addDaak = async (req, res) => {
     try {
         
         let info = {
-            file: 'https://daak.sargodhacci-org.com/'+req.file.filename,
+            file: 'https://webdaak.com/'+req.file.filename,
             category: req.body.category,
             subject: req.body.subject,
             outward: req.body.outward,
